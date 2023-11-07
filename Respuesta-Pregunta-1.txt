@@ -1,12 +1,23 @@
-Tengo desarrollada la siguiente función en javascript
+// Tengo desarrollada la siguiente función en javascript
+
 function suma (a,b,callback){
 let c = a +b;
 callback();
 }
-¿Que es el tercer parámetro recibido?
 
-El tercer parámetro recibido en la función anterior, es una función denominada o conocida como callback. Una función de callback es aquella que se pasa a otra función como un argumento, y que luego se invoca dentro de la función para completar algún tipo acción.
- 
-¿En que casos es obligatorio desarrollar este tipo de funciones?
+// 1. ¿Que es el tercer parámetro recibido?
 
-Suelen utilizarse comúnmente en en situaciones donde se trabaja con operaciones asincrónicas o eventos, y también pueden ayudar a mejorar la modularidad del código.
+// El tercer parámetro recibido en la función anterior, es una función denominada o conocida como callback. Una función de callback es aquella que se pasa a otra función como un argumento, y que luego se invoca dentro de la función para completar algún tipo acción.
+
+// 2. ¿En que casos es obligatorio desarrollar este tipo de funciones?
+
+// Suelen utilizarse comúnmente en en situaciones donde se trabaja con operaciones asincrónicas o eventos, y también pueden ayudar a mejorar la modularidad del código.
+
+
+// 3. Realizar un llamado a la función de ejemplo:
+
+function miCallback() {
+    console.log("Es el resultado de la suma.");
+}
+
+suma(2, 3, miCallback);

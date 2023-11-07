@@ -1,3 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../assets/img/matematicas.png), no-repeat;
+    background-size: cover;
+}
+
+.container{
+    max-width: 40vh;
+}
+.container_calculadora{
+    border: solid 1px #000000;
+    margin-top: 2rem;
+    box-shadow: 0.5rem 1rem 2rem black;
+    background-color: #ffffff;
+}
+
+.container_calculadora h1{
+    text-align: center;
+    padding: 2rem;
+    border-bottom: solid 1px #9b9b9b;
+}
+
+.container_calculadora p{
+    text-align: center;
+    margin-top: 1rem;
+}
+
 .error-menssage{
     color: red;
     font-size: 12px;
